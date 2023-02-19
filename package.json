@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "assignment02",
   "version": "1.0.0",
   "description": "",
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "node-fetch": "^3.3.0",
     "nodemon": "^2.0.20"
   }
 }
