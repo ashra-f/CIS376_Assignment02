@@ -69,7 +69,7 @@ To install Node.js and npm using nvm, follow these steps:
    nvm install --lts
    ```
 
-### Using npm
+### Installation
 
 1. Clone the repo
    ```
