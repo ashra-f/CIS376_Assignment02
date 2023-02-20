@@ -2,7 +2,8 @@
   "name": "assignment02",
   "version": "1.0.0",
   "engines": {
-    "node": ">=10.x"
+    "node": ">=10.x",
+    "yarn": ">=1.17.x"
   },
   "description": "",
   "main": "index.js",
