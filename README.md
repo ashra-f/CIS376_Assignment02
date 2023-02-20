@@ -12,7 +12,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 - Get detailed profile information(name, location, description) about a given Twitter user (given the user’s screen name).
 
 ## Installation Using Docker
-1. Install Docker on your machine.
+1. Install [Docker](https://www.docker.com/) on your machine.
 2. Clone the GitHub repository and navigate to the repository directory: 
    ```
    git clone https://github.com/ashra-f/CIS376_Assignment02.git
