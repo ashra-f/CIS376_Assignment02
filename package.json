@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo 'No tests specified'"
+    "test": "echo 'No tests specified'",
+    "build": "babel index.js --out-file dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +20,10 @@
     "express": "^4.18.2",
     "node-fetch": "^3.3.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2"
   }
 }
