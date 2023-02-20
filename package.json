@@ -8,10 +8,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "build": "babel index.js --out-file dist/index.js",
+    "start": "nodemon dist/index.js",
     "dev": "nodemon index.js",
-    "test": "echo 'No tests specified'",
-    "build": "babel index.js --out-file dist/index.js"
+    "test": "echo \"Error: no test specified\""
   },
   "keywords": [],
   "author": "",
