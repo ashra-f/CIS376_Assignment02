@@ -15,16 +15,18 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 ## Installation
 
 1. Clone the repo
-   ```sh
+   ```
    git clone https://github.com/ashra-f/CIS376_Assignment02.git
    ```
 2. Install npm packages
-   ```sh
+   ```
    npm install
    ```
 3. Run in development
-   ```npm run dev
+   ```
+   npm run dev
    ```
 4. Run in production
-   ```npm start
+   ```
+   npm start
    ```
