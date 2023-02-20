@@ -37,5 +37,5 @@ Connect to the API on http://localhost:8080 using Postman or Insomnia.
 | --- | --- | --- |  
 | GET | /api/tweets | To retrieve all the tweets |  
 | GET | /api/links | To retrieve all links associated with all the tweets | 
-| GET | /api/tweet/:id | To retrieve a specific tweet |  
-| GET | /api/user/:username | To retrieve a specific user's profile | 
+| GET | /api/tweet/:id | To retrieve a specific tweet by entering the tweet's id |  
+| GET | /api/user/:username | To retrieve a specific user's profile by entering the user's username| 
