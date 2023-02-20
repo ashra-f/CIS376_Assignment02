@@ -1,8 +1,8 @@
 /*
  *  Author: Ashraf Hammoud
  *  Class: CIS 376
- *  Instructor: Foyzul Hassan
- *  Date: 02/20/2023
+ *  Professor: Foyzul Hassan
+ *  Date: 02/21/2023
  */
 
 // Server setup
