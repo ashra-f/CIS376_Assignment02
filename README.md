@@ -31,7 +31,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 To use the API, you will need to have Node.js installed on your system. If you don't already have Node.js installed, you can download it from the [Node.js website](https://nodejs.org/en/).
 
-## Prerequisites
+### Prerequisites
 
 Before you can use the API, you will need to install Node.js and npm using [nvm](https://github.com/nvm-sh/nvm). If you already have nvm installed, you can skip to the installation part.
 
@@ -69,7 +69,7 @@ To install Node.js and npm using nvm, follow these steps:
    nvm install --lts
    ```
 
-## Installation Using npm
+### Using npm
 
 1. Clone the repo
    ```
