@@ -14,19 +14,6 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 ## Installation
 
-
-### Install dependencies
-```
-npm install
-```
-### Run in development
-    npm install
-### Run in production
-```
-npm start
-```
-### Installation
-
 1. Clone the repo
    ```sh
    git clone https://github.com/ashra-f/CIS376_Assignment02.git
@@ -37,6 +24,9 @@ npm start
    ```
 3. Run in development
    ```npm run dev
+   ```
+4. Run in production
+```npm start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
