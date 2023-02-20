@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo 'No tests specified'"
+    "test": "echo 'No tests specified'",
+    "build": "echo 'No build specified'"
   },
   "keywords": [],
   "author": "“ash” <“ashrafha@umich.edu”>",
