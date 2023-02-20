@@ -29,7 +29,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 ## Usage
 
-Connect to the API using Postman or Insomnia to http://localhost:8080.
+Connect to the API on http://localhost:8080 using Postman or Insomnia.
 
 ### API Endpoints  
 | HTTP Verbs | Endpoints | Action |  
