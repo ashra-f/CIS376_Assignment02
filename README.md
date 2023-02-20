@@ -11,7 +11,23 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 - Get the details about a given tweet (given the tweet’s id). Details of the tweet include created_at, text, screen_name, lang.
 - Get detailed profile information(name, location, description) about a given Twitter user (given the user’s screen name).
 
-## Installation
+## Installation Using Docker
+1. Install Docker on your machine.
+2. Clone the GitHub repository and navigate to the repository directory: 
+   ```
+   git clone https://github.com/ashra-f/CIS376_Assignment02.git
+   cd CIS376_Assignment02-main
+   ```
+3. Build the Docker image: 
+   ```
+   docker build -t asgmt02 .
+   ```
+4. Run the Docker container: 
+   ```
+   docker run -p 8080:8080 asgmt02
+   ```
+
+## Installation Using npm
 
 To use the API, you will need to have Node.js installed on your system. If you don't already have Node.js installed, you can download it from the [Node.js website](https://nodejs.org/en/).
 
@@ -53,7 +69,7 @@ To install Node.js and npm using nvm, follow these steps:
    nvm install --lts
    ```
 
-## Installation
+## Installation Using npm
 
 1. Clone the repo
    ```
