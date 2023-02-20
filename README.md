@@ -13,6 +13,48 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 ## Installation
 
+To use the API, you will need to have Node.js installed on your system. If you don't already have Node.js installed, you can download it from the [Node.js website](https://nodejs.org/en/).
+
+## Prerequisites
+
+Before you can use the API, you will need to install Node.js and npm using [nvm](https://github.com/nvm-sh/nvm). If you already have nvm installed, you can skip to the installation part.
+
+Before you can install nvm (Node Version Manager) and Node.js using the installation command, you will need to have the curl command-line tool installed on your system. If you do not already have curl installed, you can typically install it using your operating system's package manager. Here are a few examples:
+
+On Ubuntu or Debian-based Linux distributions, you can install curl using the apt package manager:
+
+```
+sudo apt update
+sudo apt install curl
+```
+
+On CentOS or Fedora-based Linux distributions, you can install curl using the yum package manager:
+
+```
+sudo yum install curl
+```
+
+On macOS, you can install curl using the Homebrew package manager:
+
+```
+brew install curl
+```
+
+On Windows, you can download the curl executable from the [curl website](https://curl.se/windows/), and add the directory containing the curl executable to your system's PATH environment variable.
+
+To install Node.js and npm using nvm, follow these steps:
+
+1. Install nvm
+   ```
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+   ```
+2. Install node.js and npm
+   ```
+   nvm install --lts
+   ```
+
+## Installation
+
 1. Clone the repo
    ```
    git clone https://github.com/ashra-f/CIS376_Assignment02.git
