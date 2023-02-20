@@ -9,8 +9,9 @@
 import express from "express";
 import fetch from "node-fetch";
 const PORT = 8080;
-const app = express();
+let app = express();
 
+// RESTful APIs
 /**
  * GET a list of tweets.
  * @route GET /api/tweets
