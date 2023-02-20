@@ -15,6 +15,8 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 ## Installation
 
+To use the API, you will need to have Node.js installed on your system. If you don't already have Node.js installed, you can download it from the [Node.js website](https://nodejs.org/en/).
+
 1. Clone the repo
    ```
    git clone https://github.com/ashra-f/CIS376_Assignment02.git
