@@ -22,11 +22,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
    ```
    npm install
    ```
-3. Run in development
-   ```
-   npm run dev
-   ```
-4. Run in production
+3. Run in production
    ```
    npm start
    ```
