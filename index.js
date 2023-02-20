@@ -7,7 +7,7 @@
 
 // Server setup
 const express = require("express");
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch")();
 
 const PORT = 8080;
 let app = express();
