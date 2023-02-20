@@ -26,9 +26,5 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
    ```npm run dev
    ```
 4. Run in production
-```npm start
+   ```npm start
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-  
-
