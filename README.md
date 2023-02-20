@@ -58,6 +58,7 @@ To install Node.js and npm using nvm, follow these steps:
 1. Clone the repo
    ```
    git clone https://github.com/ashra-f/CIS376_Assignment02.git
+   cd CIS376_Assignment02-main
    ```
 2. Install npm packages
    ```
