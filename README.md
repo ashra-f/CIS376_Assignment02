@@ -19,7 +19,7 @@ To use the API, you will need to have Node.js installed on your system. If you d
 
 ## Prerequisites
 
-Before you can use the API, you will need to install Node.js and npm using nvm (Node Version Manager). If you already have nvm installed, you can skip to the installation.
+Before you can use the API, you will need to install Node.js and npm using [nvm](https://github.com/nvm-sh/nvm)). If you already have nvm installed, you can skip to the installation part.
 
 To install Node.js and npm using nvm, follow these steps:
 1. Install nvm
