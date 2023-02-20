@@ -15,7 +15,7 @@ let app = express();
 /**
  * GET a list of tweets.
  * @route GET /api/tweets
- * @returns {object} 200 - An array of tweets objects (create time, id, and tweet text)
+ * @returns {object} 200 - An array of tweet objects (create time, id, and tweet text)
  * @returns {object} 500 - An error message
  */
 app.get("/api/tweets", (req, res) => {
@@ -38,7 +38,7 @@ app.get("/api/tweets", (req, res) => {
 /**
  * GET a list of links.
  * @route GET /api/links
- * @returns {object} 200 - An array of links objects grouped by tweet ids
+ * @returns {object} 200 - An array of link URL objects grouped by tweet ids
  * @returns {object} 500 - An error message
  */
 app.get("/api/links", (req, res) => {
