@@ -1,5 +1,28 @@
 # CIS 376: Assignment 02
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+        <li>
+      <a href="#specifications">Specifications</a>
+    </li>
+    <li>
+      <a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#using-docker">Using Docker</a></li>
+        <li><a href="#using-yarn">Using Yarn</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+  </ol>
+</details>
+
+## About The Project
+
 In this assignment, we will develop a set of REST APIs capable of reading a [JSON file](https://foyzulhassan.github.io/files/favs.json) deployed on a server and returning information by using a collection of simple HTTP requests invoked through Postman. We will be using [Node.js](https://nodejs.org/en/) and [Express.js](https://expressjs.com/) to implement the APIs.
 
 ## Specifications
