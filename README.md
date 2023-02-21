@@ -83,15 +83,19 @@ Connect to the API on http://localhost:8080 using Postman or Insomnia.
 
 ### API Endpoints
 
-#### 'GET /api/tweets'
+#### Get All tweets
 
 This endpoint allows you to retrieve all the tweets. Only their create time, id, and tweet text will be included.
 
-Response:
+**Request:**
 
 ```
 GET /api/tweets
+```
 
+**Response:**
+
+```
 [
   {
     "created_at": "Wed Mar 13 23:01:36 +0000 2013",
@@ -122,11 +126,17 @@ GET /api/tweets
 
 ```
 
-#### GET /api/links
+#### Get External Links
 
 This endpoint allows you to retrieve all the external links found in the tweets. The links are grouped by tweet id.
 
-Response:
+**Request:**
+
+```
+GET /api/links
+```
+
+**Response:**
 
 ```
 [
@@ -169,7 +179,7 @@ Response:
 ]
 ```
 
-#### GET /api/tweet/:id
+#### Get Individual Tweet
 
 This endpoint allows you to retrieve a single tweet. You'll need to provide a tweet id in the request body. The tweet returned will include the following:
 
@@ -178,11 +188,16 @@ This endpoint allows you to retrieve a single tweet. You'll need to provide a tw
 - user's screen name
 - language
 
-Response:
+**Request:**
 
 ```
-GET api/tweet/311975360667459600
+GET /api/tweet/:id
+where id = 311975360667459600
+```
 
+**Response:**
+
+```
 {
   "created_at": "Wed Mar 13 23:01:36 +0000 2013",
   "text": "Was wondering why @billgates cc'd me on story abt @MSFTResearch cool viral search tool; discovered I'm featured in it http://t.co/g6oSeEIEUr",
@@ -191,7 +206,7 @@ GET api/tweet/311975360667459600
 }
 ```
 
-#### GET /api/user/:username
+#### Get User Profile
 
 This endpoint allows you to retrieve a single user profile. You'll need to provide a username in the request body. The user profile returned will include the following:
 
@@ -199,11 +214,16 @@ This endpoint allows you to retrieve a single user profile. You'll need to provi
 - location
 - description
 
-Response:
+**Request:**
 
 ```
-GET /api/user/timoreilly
+GET /api/user/:username
+username = timoreilly
+```
 
+**Response:**
+
+```
 {
   "screen_name": "timoreilly",
   "location": "Sebastopol, CA",
