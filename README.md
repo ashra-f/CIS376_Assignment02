@@ -194,7 +194,7 @@ This endpoint allows you to retrieve a single tweet. You'll need to provide a tw
 
 ```
 GET /api/tweet/:id
-where id = 311975360667459600
+*where id = 311975360667459600*
 ```
 
 **Response:**
@@ -220,7 +220,7 @@ This endpoint allows you to retrieve a single user profile. You'll need to provi
 
 ```
 GET /api/user/:username
-username = timoreilly
+*username = timoreilly*
 ```
 
 **Response:**
