@@ -8,10 +8,11 @@
 // Server setup
 const express = require("express");
 const fetch = require("node-fetch");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const URL = "https://foyzulhassan.github.io/files/favs.json";
+const URL = process.env.URL || "https://foyzulhassan.github.io/files/favs.json";
 
 // RESTful APIs
 /**
@@ -167,23 +168,6 @@ app.listen(PORT, () =>
 );
 
 // TODO:
-// dynamic urls
-// this:
-// [
-//     311975360667459600: {
-//         "links": [
-//             "http://t.co/g6oSeEIEUr"
-//         ]
-//     }
-// ]
-
-// not this:
-// [
-//     {
-//         "311975360667459600": {
-//             "links": [
-//                 "http://t.co/g6oSeEIEUr"
-//             ]
-//         }
-//     }
-//   ]
+// handle .env file
+// dynamic URL
+// links JSON format
