@@ -112,7 +112,7 @@ Then perform the following:
 
 ## Usage
 
-Connect to the API on http://localhost:8080 (or, if you changed the port, connect on http://localhost:<host-port>) using Postman or Insomnia.
+You can connect to the API using Postman or Insomnia on http://localhost:8080, or on your newly specified host port.
 
 ### API Endpoints
 
