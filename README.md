@@ -94,7 +94,7 @@ If you wish to change the default JSON file we are reading from, you can either 
 
 - Pass a URL argument:
   ```
-  yarn node . [url_argument]
+  yarn start [url_argument]
   ```
   - Note: The default url_argument is `https://foyzulhassan.github.io/files/favs.json`.
 
