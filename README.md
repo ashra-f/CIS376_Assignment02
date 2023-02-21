@@ -45,7 +45,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
    ```
 3. Run the Docker container:
    ```
-   docker run -it -p 8080:8080 ashrafha0/restapis
+   docker run -it --platform linux/arm64/v8 -p 8080:8080 ashrafha0/restapis
    ```
 
 ### Using yarn
@@ -56,6 +56,7 @@ Start off by cloning the repo (if you don't have git, install it [here](https://
 git clone https://github.com/ashra-f/CIS376_Assignment02.git
 cd CIS376_Assignment02-main
 ```
+
 or simply downloading the zip file.
 
 #### Prerequisites
