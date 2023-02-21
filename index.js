@@ -5,14 +5,33 @@
  *  Date: 02/23/2023
  */
 
+// Access the command line arguments
+const args = process.argv.slice(2);
+
+if (args.length > 2) {
+  console.log("Too many arguments");
+  process.exit(1);
+}
+
+let arg_url = "https://foyzulhassan.github.io/files/favs.json",
+  arg_port = 8080;
+
+if (args[0] !== undefined) {
+  arg_url = args[0].toString();
+}
+
+if (args[1] !== undefined) {
+  arg_port = parseInt(args[1].toString());
+}
+
+const PORT = arg_port || process.env.PORT;
+const URL = arg_url || process.env.URL;
+
 // Server setup
 const express = require("express");
 const fetch = require("node-fetch");
 require("dotenv").config();
-
 const app = express();
-const PORT = process.env.PORT || 8080;
-const URL = process.env.URL || "https://foyzulhassan.github.io/files/favs.json";
 
 // RESTful APIs
 /**
@@ -164,7 +183,9 @@ app.get("/api/user/:username", (req, res) => {
 
 // Set up listening port
 app.listen(PORT, () =>
-  console.log(`Server is running on port http://localhost:${PORT}`)
+  console.log(
+    `JSON File: ${URL}\nServer is running on http://localhost:${PORT}`
+  )
 );
 
 // TODO:
