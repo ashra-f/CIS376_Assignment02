@@ -83,6 +83,136 @@ Connect to the API on http://localhost:8080 using Postman or Insomnia.
 
 ### API Endpoints
 
+#### 'GET /api/tweets'
+
+This endpoint allows you to retrieve all the tweets. Only their create time, id, and tweet text will be included.
+
+Response:
+
+```
+GET /api/tweets
+
+[
+  {
+    "created_at": "Wed Mar 13 23:01:36 +0000 2013",
+    "id": 311975360667459600,
+    "text": "Was wondering why @billgates cc'd me on story abt @MSFTResearch cool viral search tool; discovered I'm featured in it http://t.co/g6oSeEIEUr"
+  },
+  {
+    "created_at": "Wed Mar 13 22:16:59 +0000 2013",
+    "id": 311964132205269000,
+    "text": "The one page everyone in Hollywood is watching http://t.co/jaX0uQqk4W  This is the film industry's Pebble Watch moment."
+  },
+  {
+    "created_at": "Wed Mar 13 13:16:30 +0000 2013",
+    "id": 311828115477372900,
+    "text": "I reflected on why the #sxsw induction means so much to me and it took &gt;140 chars: http://t.co/rJWz0jKrqf"
+  },
+  {
+    "created_at": "Tue Mar 12 13:29:12 +0000 2013",
+    "id": 311468922962587650,
+    "text": "How to Create an Early Stage Pitch Deck\nhttp://t.co/TdYB5I6xBl\n(Great advice from @ryanspoon )"
+  },
+  {
+    "created_at": "Tue Mar 12 11:05:00 +0000 2013",
+    "id": 311432631726264300,
+    "text": "1st gear Empathy, 2nd gear Prototype, 3rd gear Align w/ Reality http://t.co/QxDfp2GLcQ by @Jabaldaia http://t.co/CLcxKevjrY"
+  }
+]
+
+```
+
+#### GET /api/links
+
+This endpoint allows you to retrieve all the external links found in the tweets. The links are grouped by tweet id.
+
+Response:
+
+```
+[
+  {
+    "311975360667459600": {
+      "links": [
+        "http://t.co/g6oSeEIEUr"
+      ]
+    }
+  },
+  {
+    "311964132205269000": {
+      "links": [
+        "http://t.co/jaX0uQqk4W"
+      ]
+    }
+  },
+  {
+    "311828115477372900": {
+      "links": [
+        "http://t.co/rJWz0jKrqf"
+      ]
+    }
+  },
+  {
+    "311468922962587650": {
+      "links": [
+        "http://t.co/TdYB5I6xBl"
+      ]
+    }
+  },
+  {
+    "311432631726264300": {
+      "links": [
+        "http://t.co/QxDfp2GLcQ",
+        "http://t.co/CLcxKevjrY"
+      ]
+    }
+  }
+]
+```
+
+#### GET /api/tweet/:id
+
+This endpoint allows you to retrieve a single tweet. You'll need to provide a tweet id in the request body. The tweet returned will include the following:
+
+- when the tweet was posted
+- tweet's text body
+- user's screen name
+- language
+
+Response:
+
+```
+GET api/tweet/311975360667459600
+
+{
+  "created_at": "Wed Mar 13 23:01:36 +0000 2013",
+  "text": "Was wondering why @billgates cc'd me on story abt @MSFTResearch cool viral search tool; discovered I'm featured in it http://t.co/g6oSeEIEUr",
+  "screen_name": "timoreilly",
+  "lang": "en"
+}
+```
+
+#### GET /api/user/:username
+
+This endpoint allows you to retrieve a single user profile. You'll need to provide a username in the request body. The user profile returned will include the following:
+
+- screen name
+- location
+- description
+
+Response:
+
+```
+GET /api/user/timoreilly
+
+{
+  "screen_name": "timoreilly",
+  "location": "Sebastopol, CA",
+  "description": "Founder and CEO, O'Reilly Media. Watching the alpha geeks, sharing their stories, helping the future unfold."
+}
+```
+
+### Summary
+
 | HTTP Verbs | Endpoints           | Action                                                                                                  |
 | ---------- | ------------------- | ------------------------------------------------------------------------------------------------------- |
 | GET        | /api/tweets         | To retrieve all the tweets (create time, id, and tweet text)                                            |
