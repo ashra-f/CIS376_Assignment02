@@ -48,9 +48,9 @@ or simply downloading the zip file.
 ### Using Docker
 
 1. Install [Docker](https://www.docker.com/) on your machine then open it.
-2. Build the Docker image:
+2. Pull the Docker image:
    ```
-   docker build -t restapis .
+   docker pull ashrafha0/restapis
    ```
 3. Run the Docker container:
    ```
