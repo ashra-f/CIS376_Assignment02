@@ -54,7 +54,7 @@ or simply downloading the zip file.
    ```
 3. Run the Docker container:
    ```
-   docker run -it -p 3000:3000 restapis
+   docker run -it -p 8080:8080 restapis
    ```
 
 ### Using yarn
