@@ -78,7 +78,7 @@ Then perform the following:
    yarn start
    ```
 
-If you wish to change the default JSON file we are reading from, you can either use:
+<u>If you wish to change the default JSON file we are reading from, you can either use:</u>
 
 **a. Command Line Arguments:**
 

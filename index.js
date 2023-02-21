@@ -14,21 +14,23 @@ if (args.length > 2) {
 }
 
 // Retrieve the URL and port from the command line arguments
-let arg_url = process.env.URL,
-  arg_port = process.env.PORT;
+require("dotenv").config();
 
-if (args[0] !== undefined) {
-  arg_url = args[0].toString();
-}
+let arg_url = args[0]
+  ? args[0].toString()
+  : process.env.URL
+  ? process.env.URL
+  : "https://foyzulhassan.github.io/files/favs.json";
 
-if (args[1] !== undefined) {
-  arg_port = parseInt(args[1].toString());
-}
+let arg_port = args[0]
+  ? args[1].toString()
+  : process.env.PORT
+  ? process.env.PORT
+  : 8080;
 
 // Server setup
 const express = require("express");
 const fetch = require("node-fetch");
-require("dotenv").config();
 
 const app = express();
 const PORT = arg_port;
