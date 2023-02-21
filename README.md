@@ -36,15 +36,6 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 ## Installation
 
-Start off by cloning the repo (if you don't have git, install it [here](https://git-scm.com/downloads)):
-
-```
-git clone https://github.com/ashra-f/CIS376_Assignment02.git
-cd CIS376_Assignment02-main
-```
-
-or simply downloading the zip file.
-
 ### Using Docker
 
 1. Install [Docker](https://www.docker.com/) on your machine then open it.
@@ -58,6 +49,14 @@ or simply downloading the zip file.
    ```
 
 ### Using yarn
+
+Start off by cloning the repo (if you don't have git, install it [here](https://git-scm.com/downloads)):
+
+```
+git clone https://github.com/ashra-f/CIS376_Assignment02.git
+cd CIS376_Assignment02-main
+```
+or simply downloading the zip file.
 
 #### Prerequisites
 
