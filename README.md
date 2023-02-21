@@ -139,6 +139,8 @@ GET /api/links
 **Response:**
 
 ```
+GET /api/links
+
 [
   {
     "311975360667459600": {
