@@ -61,7 +61,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
   ```
    docker run -it --platform linux/arm64/v8 -p <host-port>:<container-port> -e PORT=<PORT_value> ashrafha0/rest_apis
   ```
-  **note:** `<container-port>` should equal to `<PORT_value>`.
+  - **note:** `<container-port>` should equal to `<PORT_value>`.
 
 Skip to the usage section? [Click here!](#usage)
 
