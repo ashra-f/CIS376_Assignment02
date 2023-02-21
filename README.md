@@ -52,11 +52,16 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 4. **[Optional]** If you wish to change the default JSON file we are reading from, run the following:
 
    ```
-    docker run -it --platform linux/arm64/v8 -p <host-port>:<container-port> -e URL=<URL_value> -e PORT=<PORT_value> ashrafha0/rest_apis
+    docker run -it --platform linux/arm64/v8 -p 8080:8080 -e URL=<URL_value> ashrafha0/rest_apis
    ```
 
-   - Replace `<host-port>` with the port number you want to use on your host machine, and `<container-port>` with the port number that your application is listening on inside the container.
-   - Replace `<URL_value>` with the new JSON file path, and replace `<PORT_value>` with the same port number you set for `<container-port>`.
+   - Replace `<URL_value>` with the new JSON file path.
+
+- You can also change the host and container ports by running the following:
+  ```
+   docker run -it --platform linux/arm64/v8 -p <host-port>:<container-port> -e PORT=<PORT_value> ashrafha0/rest_apis
+  ```
+  **note:** `<container-port>` should equal to `<PORT_value>`.
 
 Skip to the usage section? [Click here!](#usage)
 
@@ -174,42 +179,37 @@ GET /api/links
 
 ```
 [
-  {
-    "311975360667459600": {
-      "links": [
-        "http://t.co/g6oSeEIEUr"
-      ]
+    {
+        "id": 311975360667459600,
+        "links": [
+            "http://t.co/g6oSeEIEUr"
+        ]
+    },
+    {
+        "id": 311964132205269000,
+        "links": [
+            "http://t.co/jaX0uQqk4W"
+        ]
+    },
+    {
+        "id": 311828115477372900,
+        "links": [
+            "http://t.co/rJWz0jKrqf"
+        ]
+    },
+    {
+        "id": 311468922962587650,
+        "links": [
+            "http://t.co/TdYB5I6xBl"
+        ]
+    },
+    {
+        "id": 311432631726264300,
+        "links": [
+            "http://t.co/QxDfp2GLcQ",
+            "http://t.co/CLcxKevjrY"
+        ]
     }
-  },
-  {
-    "311964132205269000": {
-      "links": [
-        "http://t.co/jaX0uQqk4W"
-      ]
-    }
-  },
-  {
-    "311828115477372900": {
-      "links": [
-        "http://t.co/rJWz0jKrqf"
-      ]
-    }
-  },
-  {
-    "311468922962587650": {
-      "links": [
-        "http://t.co/TdYB5I6xBl"
-      ]
-    }
-  },
-  {
-    "311432631726264300": {
-      "links": [
-        "http://t.co/QxDfp2GLcQ",
-        "http://t.co/CLcxKevjrY"
-      ]
-    }
-  }
 ]
 ```
 

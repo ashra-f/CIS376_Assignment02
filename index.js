@@ -85,19 +85,18 @@ app.get("/api/links", (req, res) => {
         tweet.links = links;
       });
 
-      // Group and Label Links by TweetId
-      let linksByTweetId = [];
+      // Remove textBody From Each Tweet
       tweetLinks.forEach((tweet) => {
-        linksByTweetId.push({ [tweet.id]: { links: tweet.links } });
+        delete tweet.textBody;
       });
 
       // No Links Found
-      if (linksByTweetId.length === 0) {
+      if (tweetLinks.length === 0) {
         res.send("No links");
         return;
       }
 
-      res.send(linksByTweetId);
+      res.send(tweetLinks);
     })
     .catch((err) => {
       console.log(err);
@@ -186,5 +185,7 @@ app.get("/api/user/:username", (req, res) => {
 
 // Set up listening port
 app.listen(PORT, () =>
-  console.log(`JSON File: ${URL}\nServer is running.\nPress Ctrl+C to stop.`)
+  console.log(
+    `JSON File: ${URL}\nServer is running on port ${PORT}.\nPress Ctrl+C to stop.`
+  )
 );
