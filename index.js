@@ -186,7 +186,5 @@ app.get("/api/user/:username", (req, res) => {
 
 // Set up listening port
 app.listen(PORT, () =>
-  console.log(
-    `JSON File: ${URL}\nServer is running on http://localhost:${PORT}`
-  )
+  console.log(`JSON File: ${URL}\nServer is running.\nPress Ctrl+C to stop.`)
 );

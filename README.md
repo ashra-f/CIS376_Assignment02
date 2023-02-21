@@ -52,11 +52,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 4. **[Optional]** If you wish to change the default JSON file we are reading from, run the following:
 
    ```
-    docker run -it
-    -p <host-port>:<container-port>
-    -e <URL>=<value>
-    -e <container-port>=<value>
-    ashrafha0/rest_apis
+    docker run -it -p <host-port>:<container-port> -e <URL>=<value> -e <container-port>=<value> ashrafha0/rest_apis
    ```
 
    - Replace `<host-port>` with the port number you want to use on your host machine, and `<container-port>` with the port number that your application is listening on inside the container.
