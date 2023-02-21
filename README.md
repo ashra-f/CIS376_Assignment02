@@ -41,11 +41,24 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 1. Install [Docker](https://www.docker.com/) on your machine then open it.
 2. Pull the Docker image:
    ```
-   docker pull ashrafha0/restapis
+   docker pull ashrafha0/rest_apis
    ```
-3. Run the Docker container:
+3. Run the Docker container on port 8080:
+
    ```
-   docker run -it --platform linux/arm64/v8 -p 8080:8080 ashrafha0/restapis
+   docker run -it --platform linux/arm64/v8 -p 8080:8080 ashrafha0/rest_apis
+   ```
+
+   If you wish to change the default JSON file we are reading from, run the following (don't forget to set the URL variable):
+
+   ```
+   docker run -it -p 8080:8080 --platform linux/arm64/v8 -e URL="" ashrafha0/rest_apis
+   ```
+
+   If you wish to change the port, run the following (don't forget to replace the X's with your desired PORT number ):
+
+   ```
+    docker run -it -p 8080:X --platform linux/arm64/v8 -e PORT=X -e URL="https://foyzulhassan.github.io/files/favs.jsodfn" rest_apis
    ```
 
 ### Using yarn
@@ -78,7 +91,7 @@ Then perform the following:
    yarn start
    ```
 
-<span style="color: red">If you wish to change the default JSON file we are reading from, you can either use:</span>
+If you wish to change the default JSON file we are reading from, you can either use:
 
 **a. Command Line Arguments:**
 
@@ -91,7 +104,7 @@ Then perform the following:
 **b. Environment Variables:**
 
 - Rename the .env.example file to .env.
-- Set your desired JSON file by changing the URL variable.
+- Set your desired JSON file by changing the URL variable and/or PORT variable.
 - Run:
 
   ```
@@ -100,7 +113,7 @@ Then perform the following:
 
 ## Usage
 
-Connect to the API on http://localhost:8080 using Postman or Insomnia.
+Connect to the API on http://localhost:8080 (or, if you changed the port, on http://localhost:YOUR_PORT) using Postman or Insomnia.
 
 ### API Endpoints
 

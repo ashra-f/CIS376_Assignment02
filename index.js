@@ -22,7 +22,7 @@ let arg_url = args[0]
   ? process.env.URL
   : "https://foyzulhassan.github.io/files/favs.json";
 
-let arg_port = args[0]
+let arg_port = args[1]
   ? args[1].toString()
   : process.env.PORT
   ? process.env.PORT
@@ -190,7 +190,3 @@ app.listen(PORT, () =>
     `JSON File: ${URL}\nServer is running on http://localhost:${PORT}`
   )
 );
-
-// TODO:
-// links JSON format
-// docker image push
