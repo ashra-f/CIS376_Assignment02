@@ -172,8 +172,6 @@ GET /api/links
 **Response:**
 
 ```
-GET /api/links
-
 [
   {
     "311975360667459600": {
@@ -253,7 +251,7 @@ This endpoint allows you to retrieve a single user profile. You'll need to provi
 
 ```
 GET /api/user/:username
-(username = timoreilly)
+(where username = timoreilly)
 ```
 
 **Response:**
