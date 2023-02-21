@@ -1,15 +1,17 @@
 /*
  *  Author: Ashraf
- *  Class: CIS 376
+ *  Class: CIS 376-- SWE II
  *  Professor: Foyzul Hassan
- *  Date: 02/21/2023
+ *  Date: 02/23/2023
  */
 
 // Server setup
 const express = require("express");
 const fetch = require("node-fetch");
+
 const app = express();
 const PORT = process.env.PORT || 8080;
+const URL = "https://foyzulhassan.github.io/files/favs.json";
 
 // RESTful APIs
 /**
@@ -19,7 +21,7 @@ const PORT = process.env.PORT || 8080;
  * @returns {object} 500 - An error message
  */
 app.get("/api/tweets", (req, res) => {
-  fetch("https://foyzulhassan.github.io/files/favs.json")
+  fetch(URL)
     .then((res) => res.json())
     .then((data) => {
       // Get only the created_at, id, and tweet text fields from all tweets
@@ -42,7 +44,7 @@ app.get("/api/tweets", (req, res) => {
  * @returns {object} 500 - An error message
  */
 app.get("/api/links", (req, res) => {
-  fetch("https://foyzulhassan.github.io/files/favs.json")
+  fetch(URL)
     .then((res) => res.json())
     .then((data) => {
       // Gets Tweets With Only Their Id and TextBody
@@ -59,12 +61,14 @@ app.get("/api/links", (req, res) => {
         let links = tweet.textBody.match(regex);
         tweet.links = links;
       });
+
       // Group and Label Links by TweetId
       let linksByTweetId = [];
       tweetLinks.forEach((tweet) => {
         linksByTweetId.push({ [tweet.id]: { links: tweet.links } });
       });
 
+      // No Links Found
       if (linksByTweetId.length === 0) {
         res.send("No links");
         return;
@@ -85,7 +89,7 @@ app.get("/api/links", (req, res) => {
  * @returns {object} 500 - An error message
  */
 app.get("/api/tweet/:id", (req, res) => {
-  fetch("https://foyzulhassan.github.io/files/favs.json")
+  fetch(URL)
     .then((res) => res.json())
     .then((data) => {
       // Checks if the provided Id is a number
@@ -130,7 +134,7 @@ app.get("/api/tweet/:id", (req, res) => {
  * @returns {object} 500 - An error message
  */
 app.get("/api/user/:username", (req, res) => {
-  fetch("https://foyzulhassan.github.io/files/favs.json")
+  fetch(URL)
     .then((res) => res.json())
     .then((data) => {
       const username = req.params.username;
@@ -161,3 +165,25 @@ app.get("/api/user/:username", (req, res) => {
 app.listen(PORT, () =>
   console.log(`Server is running on port http://localhost:${PORT}`)
 );
+
+// TODO:
+// dynamic urls
+// this:
+// [
+//     311975360667459600: {
+//         "links": [
+//             "http://t.co/g6oSeEIEUr"
+//         ]
+//     }
+// ]
+
+// not this:
+// [
+//     {
+//         "311975360667459600": {
+//             "links": [
+//                 "http://t.co/g6oSeEIEUr"
+//             ]
+//         }
+//     }
+//   ]
