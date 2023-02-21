@@ -94,9 +94,9 @@ If you wish to change the default JSON file we are reading from, you can either 
 
 - Pass a URL argument:
   ```
-  yarn start [url_argument]
+  yarn start [url] [port]
   ```
-  - Note: The default url_argument is `https://foyzulhassan.github.io/files/favs.json`.
+  - Note: The default url is `https://foyzulhassan.github.io/files/favs.json` and the default port is `8080`.
 
 ## Usage
 
