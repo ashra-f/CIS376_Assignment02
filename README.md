@@ -50,11 +50,11 @@ or simply downloading the zip file.
 1. Install [Docker](https://www.docker.com/) on your machine then open it.
 2. Build the Docker image:
    ```
-   docker build -t restAPIs .
+   docker build -t restapis .
    ```
 3. Run the Docker container:
    ```
-   docker run -it -p 8080:8080 restAPIs
+   docker run -it -p 8080:8080 restapis
    ```
 
 ### Using yarn
