@@ -129,6 +129,8 @@ This endpoint allows you to retrieve all the external links found in the tweets.
 Response:
 
 ```
+GET /api/links
+
 [
   {
     "311975360667459600": {
