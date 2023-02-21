@@ -47,7 +47,7 @@ or simply downloading the zip file.
 
 ### Using Docker
 
-1. Install [Docker](https://www.docker.com/) on your machine.
+1. Install [Docker](https://www.docker.com/) on your machine then open it.
 2. Build the Docker image:
    ```
    docker build -t restAPIs .
