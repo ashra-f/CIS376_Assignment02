@@ -73,9 +73,30 @@ Then perform the following:
    yarn install
    ```
 2. Run the application:
+
    ```
    yarn start
    ```
+
+If you wish to change the default JSON file we are reading from, you can either use:
+
+**a. Environment Variables:**
+
+- Rename the .env.example file to .env.
+- Set your desired JSON file by changing the URL variable.
+- Run:
+
+  ```
+  yard start
+  ```
+
+**b. Command Line Arguments:**
+
+- Pass a URL argument:
+  ```
+  yarn node . [url_argument]
+  ```
+  - Note: The default url_argument is `https://foyzulhassan.github.io/files/favs.json`.
 
 ## Usage
 

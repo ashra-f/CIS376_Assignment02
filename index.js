@@ -34,7 +34,7 @@ app.get("/api/tweets", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).send("Error retrieving data");
+      res.status(500).send(`Error retrieving data from ${URL}`);
     });
 });
 
@@ -79,7 +79,7 @@ app.get("/api/links", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).send("Error retrieving data");
+      res.status(500).send(`Error retrieving data from ${URL}`);
     });
 });
 
@@ -124,7 +124,7 @@ app.get("/api/tweet/:id", (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).send("Error retrieving data");
+      res.status(500).send(`Error retrieving data from ${URL}`);
     });
 });
 
