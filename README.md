@@ -63,7 +63,7 @@ or simply downloading the zip file.
 
 Before you begin, make sure you have the following software installed on your system:
 
-- [Node.js](https://nodejs.org/en/) - version 14 or later is recommended.
+- [Node.js](https://nodejs.org/en/) - version 12 or later is recommended.
 - [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) - a package manager for Node.js.
 
 Then perform the following:
