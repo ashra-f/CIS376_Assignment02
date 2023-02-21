@@ -80,7 +80,15 @@ Then perform the following:
 
 If you wish to change the default JSON file we are reading from, you can either use:
 
-**a. Environment Variables:**
+**a. Command Line Arguments:**
+
+- Pass a URL argument:
+  ```
+  yarn start [url] [port]
+  ```
+  - Note: The default url is `https://foyzulhassan.github.io/files/favs.json` and the default port is `8080`.
+
+**b. Environment Variables:**
 
 - Rename the .env.example file to .env.
 - Set your desired JSON file by changing the URL variable.
@@ -89,14 +97,6 @@ If you wish to change the default JSON file we are reading from, you can either 
   ```
   yard start
   ```
-
-**b. Command Line Arguments:**
-
-- Pass a URL argument:
-  ```
-  yarn start [url] [port]
-  ```
-  - Note: The default url is `https://foyzulhassan.github.io/files/favs.json` and the default port is `8080`.
 
 ## Usage
 

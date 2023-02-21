@@ -13,8 +13,9 @@ if (args.length > 2) {
   process.exit(1);
 }
 
-let arg_url = "https://foyzulhassan.github.io/files/favs.json",
-  arg_port = 8080;
+// Retrieve the URL and port from the command line arguments
+let arg_url = process.env.URL,
+  arg_port = process.env.PORT;
 
 if (args[0] !== undefined) {
   arg_url = args[0].toString();
@@ -24,14 +25,14 @@ if (args[1] !== undefined) {
   arg_port = parseInt(args[1].toString());
 }
 
-const PORT = arg_port || process.env.PORT;
-const URL = arg_url || process.env.URL;
-
 // Server setup
 const express = require("express");
 const fetch = require("node-fetch");
 require("dotenv").config();
+
 const app = express();
+const PORT = arg_port;
+const URL = arg_url;
 
 // RESTful APIs
 /**
@@ -189,6 +190,5 @@ app.listen(PORT, () =>
 );
 
 // TODO:
-// handle .env file
-// dynamic URL
 // links JSON format
+// docker image push
