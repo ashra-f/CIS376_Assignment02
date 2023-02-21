@@ -49,11 +49,17 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
    docker run -it --platform linux/arm64/v8 -p 8080:8080 ashrafha0/rest_apis
    ```
 
-4. **[Optional]** If you wish to change the default JSON file we are reading from, run the following (don't forget to set the new URL):
+4. **[Optional]** If you wish to change the default JSON file we are reading from, run the following:
 
    ```
-   docker run -it -p 8080:8080 --platform linux/arm64/v8 -e URL="" ashrafha0/rest_apis
+    docker run -it
+    -p <host-port>:<container-port>
+    -e <URL>=<value>
+    -e <container-port>=<value>
+    ashrafha0/rest_apis
    ```
+
+   - Replace `<host-port>` with the port number you want to use on your host machine, and `<container-port>` with the port number that your application is listening on inside the container.
 
 Skip to the usage section? [Click here!](#usage)
 
@@ -87,29 +93,30 @@ Then perform the following:
    yarn start
    ```
 
-If you wish to change the default JSON file we are reading from, you can either use:
+3. **[Optional]** If you wish to change the default JSON file we are reading from, you can either use:
+   **a. Command Line Arguments:**
 
-**a. Command Line Arguments:**
+   - Pass a URL argument:
 
-- Pass a URL argument:
-  ```
-  yarn start [url] [port]
-  ```
-  - Note: The default url is `https://foyzulhassan.github.io/files/favs.json` and the default port is `8080`.
+     ```
+     yarn start <url> <host-port>
+     ```
 
-**b. Environment Variables:**
+     - Note: The default url is `https://foyzulhassan.github.io/files/favs.json` and the default host port is `8080`.
 
-- Rename the .env.example file to .env.
-- Set your desired JSON file by changing the URL variable and/or PORT variable.
-- Run:
+   **b. Environment Variables:**
 
-  ```
-  yard start
-  ```
+   - Rename the .env.example file to .env.
+   - Set your desired JSON file by changing the URL variable and/or PORT variable.
+   - Run:
+
+     ```
+     yard start
+     ```
 
 ## Usage
 
-Connect to the API on http://localhost:8080 (or, if you changed the port, connect on http://localhost:YOUR_PORT) using Postman or Insomnia.
+Connect to the API on http://localhost:8080 (or, if you changed the port, connect on http://localhost:<host-port>) using Postman or Insomnia.
 
 ### API Endpoints
 
