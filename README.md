@@ -49,17 +49,13 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
    docker run -it --platform linux/arm64/v8 -p 8080:8080 ashrafha0/rest_apis
    ```
 
-   If you wish to change the default JSON file we are reading from, run the following (don't forget to set the URL variable):
+4. **[Optional]** If you wish to change the default JSON file we are reading from, run the following (don't forget to set the new URL):
 
    ```
    docker run -it -p 8080:8080 --platform linux/arm64/v8 -e URL="" ashrafha0/rest_apis
    ```
 
-   If you wish to change the port, run the following (don't forget to replace the X's with your desired PORT number ):
-
-   ```
-    docker run -it -p 8080:X --platform linux/arm64/v8 -e PORT=X -e URL="https://foyzulhassan.github.io/files/favs.jsodfn" rest_apis
-   ```
+Skip to the usage section? [Click here!](#usage)
 
 ### Using yarn
 
@@ -113,7 +109,7 @@ If you wish to change the default JSON file we are reading from, you can either 
 
 ## Usage
 
-Connect to the API on http://localhost:8080 (or, if you changed the port, on http://localhost:YOUR_PORT) using Postman or Insomnia.
+Connect to the API on http://localhost:8080 (or, if you changed the port, connect on http://localhost:YOUR_PORT) using Postman or Insomnia.
 
 ### API Endpoints
 
