@@ -36,28 +36,30 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
 
 ## Installation
 
+Start off by cloning the repo (if you don't have git, install it [here](https://git-scm.com/downloads)):
+
+```
+git clone https://github.com/ashra-f/CIS376_Assignment02.git
+cd CIS376_Assignment02-main
+```
+
+or simply downloading the zip file.
+
 ### Using Docker
 
 1. Install [Docker](https://www.docker.com/) on your machine.
-2. Clone the GitHub repository and navigate to the repository directory:
-   ```
-   git clone https://github.com/ashra-f/CIS376_Assignment02.git
-   cd CIS376_Assignment02-main
-   ```
-3. Build the Docker image:
+2. Build the Docker image:
    ```
    docker build -t restAPIs .
    ```
-4. Run the Docker container:
+3. Run the Docker container:
    ```
    docker run -it -p 8080:8080 restAPIs
    ```
 
 ### Using yarn
 
-To use the API, you will need to have Node.js installed on your system. If you don't already have Node.js installed, you can download it from the [Node.js website](https://nodejs.org/en/).
-
-### Prerequisites
+#### Prerequisites
 
 Before you begin, make sure you have the following software installed on your system:
 
@@ -66,16 +68,11 @@ Before you begin, make sure you have the following software installed on your sy
 
 Then perform the following:
 
-1. Clone the repo
-   ```
-   git clone https://github.com/ashra-f/CIS376_Assignment02.git
-   cd CIS376_Assignment02-main
-   ```
-2. Install yarn packages
+1. Install yarn packages:
    ```
    yarn install
    ```
-3. Run in production
+2. Run the application:
    ```
    yarn start
    ```
