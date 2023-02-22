@@ -62,7 +62,7 @@ The RESTful APIs should be able to respond, with the appropriate data, to the fo
    docker run -it --platform linux/arm64/v8 -p <host-port>:<container-port> -e PORT=<PORT_value> ashrafha0/rest_apis
   ```
   - **note:** `<container-port>` should equal to `<PORT_value>`.
-  - Possible bug: at times when running the server, the wrong port might be displayed in the terminal, so make sure you connect to http://localhost:`<host-port>`
+  - Possible bug: at times when running the server, the wrong port might be displayed in the terminal, so make sure you connect to http://localhost: + `<host-port>`
 
 Skip to the usage section? [Click here!](#usage)
 
