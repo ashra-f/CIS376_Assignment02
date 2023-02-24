@@ -114,7 +114,7 @@ Then perform the following:
    - Run:
 
      ```
-     yard start
+     yarn start
      ```
 
 ## Usage
