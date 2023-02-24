@@ -123,7 +123,7 @@ You can connect to the API using Postman or Insomnia on http://localhost:8080, o
 
 ### API Endpoints
 
-#### Get All tweets
+### Get All tweets
 
 This endpoint allows you to retrieve all the tweets. Only their create time, id, and tweet text will be included.
 
@@ -166,7 +166,7 @@ GET /api/tweets
 
 ```
 
-#### Get External Links
+### Get External Links
 
 This endpoint allows you to retrieve all the external links found in the tweets. The links are grouped by tweet id.
 
@@ -214,7 +214,7 @@ GET /api/links
 ]
 ```
 
-#### Get Individual Tweet
+### Get Individual Tweet
 
 This endpoint allows you to retrieve a single tweet. You'll need to provide a tweet id in the request body. The tweet returned will include the following:
 
@@ -241,7 +241,7 @@ GET /api/tweet/:id
 }
 ```
 
-#### Get User Profile
+### Get User Profile
 
 This endpoint allows you to retrieve a single user profile. You'll need to provide a username in the request body. The user profile returned will include the following:
 
